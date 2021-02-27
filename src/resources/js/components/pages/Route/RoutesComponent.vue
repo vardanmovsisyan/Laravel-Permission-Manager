@@ -123,3 +123,24 @@
         }
     }
 </script>
+
+<style scoped>
+    .table {
+        table-layout: fixed;
+    }
+    
+    td, th {
+        overflow-x: hidden;
+        white-space: nowrap;
+        animation: floatText 5s infinite alternate ease-in-out;
+    }
+
+    @keyframes floatText{
+        from {
+            left: 00%;
+        }
+        to {
+            left: 100%;
+        }
+    }
+</style>
