@@ -20,7 +20,7 @@
                                       v-model="selectedPrefixFilter"></v-select>
                         </div>
                     </div>
-                    <table class="table table-striped table-vcenter">
+                    <table class="table table-striped table-vcenter" style="table-layout: fixed;">
                         <thead>
                         <tr>
                             <th class="text-center" style="width: 50px;">#</th>
@@ -35,7 +35,7 @@
                             <th class="text-center" scope="row">{{ key+1 }}</th>
                             <td>{{ route.uri }}</td>
                             <td>{{ route.action['as'] }}</td>
-                            <td>{{ route.action['uses'] }}</td>
+                            <td style="overflow-x: hidden;">{{ route.action['uses'] }}</td>
                             <td class="text-center">
                                 <div class="btn-group">
                                     <a href="" class="btn btn-sm btn-primary" data-toggle="modal"
